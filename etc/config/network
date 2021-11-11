@@ -19,7 +19,7 @@ config interface 'lan'
 
 config device 'lan_eth0_1_dev'
 	option name 'eth0.1'
-	option macaddr '3c:cd:57:8b:b8:9c'
+	option macaddr '3C:CD:57:8B:B8:96'
 
 config switch
 	option name 'switch0'
@@ -56,7 +56,7 @@ config interface 'wan1'
 	option delegate '0'
 	option hostname 'open11111'
 	option metric '10'
-	option macaddr '3C:CD:57:8B:B8:12'
+	option macaddr '3C:CD:57:8B:B8:16'
 
 config interface 'wan2'
 	option proto 'dhcp'
@@ -64,7 +64,7 @@ config interface 'wan2'
 	option delegate '0'
 	option hostname 'open222'
 	option metric '20'
-	option macaddr '3C:CD:57:8B:B8:23'
+	option macaddr '3C:CD:57:8B:B8:26'
 
 config interface 'wan3'
 	option proto 'dhcp'
@@ -72,5 +72,5 @@ config interface 'wan3'
 	option delegate '0'
 	option hostname 'open333'
 	option metric '30'
-	option macaddr '3C:CD:57:8B:B8:45'
+	option macaddr '3C:CD:57:8B:B8:36'
 
