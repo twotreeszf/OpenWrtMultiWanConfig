@@ -14,6 +14,7 @@ config dnsmasq
 	option ednspacket_max '1232'
 	option rebind_protection '0'
 	option noresolv '0'
+	option port '53'
 
 config dhcp 'lan'
 	option interface 'lan'
@@ -39,7 +40,7 @@ config odhcpd 'odhcpd'
 
 config srvhost
 	option srv '_vlmcs._tcp'
-	option target 'OpenWrt'
+	option target 'ImmortalWrt'
 	option port '1688'
 	option class '0'
 	option weight '100'

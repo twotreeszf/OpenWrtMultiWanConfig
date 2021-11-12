@@ -22,7 +22,7 @@ config zone
 	option forward 'REJECT'
 	option masq '1'
 	option mtu_fix '1'
-	option network 'wan wan6 wan1 wan2 wan3'
+	option network 'wan wan6 wan1 wan2 wan3 vwan1 vwan2 vwan3'
 
 config forwarding
 	option src 'lan'
@@ -173,11 +173,6 @@ config include 'mia'
 	option path '/etc/mia.include'
 	option reload '1'
 
-config include 'openclash'
-	option type 'script'
-	option path '/var/etc/openclash.include'
-	option reload '1'
-
 config include 'shadowsocksr'
 	option type 'script'
 	option path '/var/etc/shadowsocksr.include'
@@ -194,10 +189,4 @@ config rule 'kms'
 	option src 'wan'
 	option proto 'tcp'
 	option dest_port '1688'
-
-config include 'iptvhelper'
-	option type 'script'
-	option path '/etc/firewall.iptvhelper'
-	option family 'any'
-	option reload '1'
 
